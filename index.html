@@ -496,7 +496,7 @@ const TEMPORADA={
 /* Los productos de temporada usan la categoría "navidad": solo salen en la sección navideña, no en el catálogo normal. */
 const NAVCAT={id:"navidad",n:"Navidad",d:"Productos de temporada.",ic:"park",k:"c-paper"};
 /* Grupos de la sección navideña: el producto usa "s" con uno de estos nombres. Si un grupo no está aquí, igual se muestra al final. */
-const NAVGRUPOS={"Cajas":{ic:"redeem",d:"Cajas navideñas para galletas, cupcakes, queques y regalos."},"Cortadores":{ic:"cookie",d:"Cortadores con marcador para galletas navideñas decoradas."},"Moldes":{ic:"bakery_dining",d:"Moldes de aluminio con tapa para hornear y regalar el queque navideño."},"Premezclas":{ic:"blender",d:"Premezcla de la casa para hacer el queque navideño fácil."},"Botellas":{ic:"liquor",d:"Para envasar y regalar rompope, ponche y licores caseros."}};
+const NAVGRUPOS={"Cajas":{ic:"redeem",d:"Cajas navideñas para galletas, cupcakes, queques y regalos."},"Cortadores":{ic:"cookie",d:"Cortadores con marcador para galletas navideñas decoradas."},"Moldes":{ic:"bakery_dining",d:"Moldes de aluminio con tapa para hornear y regalar el queque navideño."},"Botellas":{ic:"liquor",d:"Para envasar y regalar rompope, ponche y licores caseros."}};
 const navOn=()=>TEMPORADA.activa&&PRODUCTOS.some(p=>p.c==="navidad");
 const CATS=[
   {id:"cremas",n:"Chantilly y cremas para batir",d:"Toppings y cremas para cubrir y rellenar.",ic:"icecream",k:"c-navy"},
@@ -2159,11 +2159,15 @@ const PRODUCTOS=[
 "s": "Cortadores",
 "m": "Temporada navideña",
 "n": "Cortador hombre de jengibre",
-"p": "Cortador y marcador",
+"p": "8 cm",
 "pr": 2950,
 "img": "img/cortador-jengibre.webp",
 "d": "Cortador de galletas con forma de hombre de jengibre saludando, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
 "x": [
+[
+"Medida",
+"8 cm"
+],
 [
 "Incluye",
 "Cortador y marcador"
@@ -2325,7 +2329,7 @@ const PRODUCTOS=[
 },
 {
 "id": "premezcla-queque-navideno",
-"c": "navidad",
+"c": "premezclas",
 "m": "Temporada navideña",
 "n": "Premezcla para queque navideño",
 "p": "1 kg",
@@ -2342,8 +2346,7 @@ const PRODUCTOS=[
 "150 °C, unos 40 minutos"
 ]
 ],
-"u": "Queque navideño para la familia, para regalar o para vender",
-"s": "Premezclas"
+"u": "Queque navideño para la familia, para regalar o para vender"
 },
 {
 "id": "azucar-glass-krisaby-1kg",
