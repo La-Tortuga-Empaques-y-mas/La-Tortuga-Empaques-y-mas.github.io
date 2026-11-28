@@ -496,7 +496,7 @@ const TEMPORADA={
 /* Los productos de temporada usan la categoría "navidad": solo salen en la sección navideña, no en el catálogo normal. */
 const NAVCAT={id:"navidad",n:"Navidad",d:"Productos de temporada.",ic:"park",k:"c-paper"};
 /* Grupos de la sección navideña: el producto usa "s" con uno de estos nombres. Si un grupo no está aquí, igual se muestra al final. */
-const NAVGRUPOS={"Cajas":{ic:"redeem",d:"Cajas navideñas para galletas, cupcakes, queques y regalos."},"Moldes":{ic:"bakery_dining",d:"Moldes de aluminio con tapa para hornear y regalar el queque navideño."},"Botellas":{ic:"liquor",d:"Para envasar y regalar rompope, ponche y licores caseros."}};
+const NAVGRUPOS={"Cajas":{ic:"redeem",d:"Cajas navideñas para galletas, cupcakes, queques y regalos."},"Cortadores":{ic:"cookie",d:"Cortadores con marcador para galletas navideñas decoradas."},"Moldes":{ic:"bakery_dining",d:"Moldes de aluminio con tapa para hornear y regalar el queque navideño."},"Premezclas":{ic:"blender",d:"Premezcla de la casa para hacer el queque navideño fácil."},"Botellas":{ic:"liquor",d:"Para envasar y regalar rompope, ponche y licores caseros."}};
 const navOn=()=>TEMPORADA.activa&&PRODUCTOS.some(p=>p.c==="navidad");
 const CATS=[
   {id:"cremas",n:"Chantilly y cremas para batir",d:"Toppings y cremas para cubrir y rellenar.",ic:"icecream",k:"c-navy"},
@@ -505,6 +505,7 @@ const CATS=[
   {id:"colorantes",n:"Colorantes",d:"Líquido, gel, polvo y para chocolate.",ic:"palette",k:"c-lime",subs:["Gel","Líquido","Polvo","Para chocolate"]},
   {id:"saborizantes",n:"Saborizantes y esencias",d:"Vainilla, almendra y frutales.",ic:"water_drop",k:"c-paper"},
   {id:"premezclas",n:"Premezclas para queque",d:"Listas para hornear.",ic:"bakery_dining",k:"c-lime"},
+  {id:"fondant",n:"Fondant, glasé y azúcar glass",d:"Para cubrir, modelar y decorar.",ic:"cake",k:"c-orange"},
   {id:"decoracion",n:"Sprinkles y decoración",d:"Grageas, perlas y confites.",ic:"celebration",k:"c-navy"},
   {id:"utensilios",n:"Utensilios",d:"Moldes, mangas y boquillas.",ic:"skillet",k:"c-paper"},
   {id:"cajas",n:"Cajas para repostería",d:"Para queque, cupcakes y postres.",ic:"inventory_2",k:"c-orange"},
@@ -1995,6 +1996,473 @@ const PRODUCTOS=[
 ]
 ],
 "u": "Queque navideño grande para compartir o regalar"
+},
+{
+"id": "cortador-arbol-estrella",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador árbol con estrella",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-arbol-estrella.webp",
+"d": "Cortador de galletas con forma de árbol de Navidad con estrella, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-arbol-mono",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador árbol con moño",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-arbol-mono.webp",
+"d": "Cortador de galletas con forma de árbol de Navidad con moño, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-baston",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador bastón con moño",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-baston.webp",
+"d": "Cortador de galletas con forma de bastón navideño con moño, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-cara-santa",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador cara de Santa",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-cara-santa.webp",
+"d": "Cortador de galletas con forma de cara de Santa Claus, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-santa-reno",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador Santa con reno",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-santa-reno.webp",
+"d": "Cortador de galletas con forma de Santa Claus abrazando a un reno, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-santa-pijama",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador Santa en pijama",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-santa-pijama.webp",
+"d": "Cortador de galletas con forma de Santa Claus en pijama y pantuflas, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-jengibre",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador hombre de jengibre",
+"p": "Cortador y marcador",
+"pr": 2950,
+"img": "img/cortador-jengibre.webp",
+"d": "Cortador de galletas con forma de hombre de jengibre saludando, con su marcador para estampar los detalles del dibujo en la masa. Se corta la galleta y luego se presiona el marcador encima para que queden las líneas del diseño. Disponible solo en temporada.",
+"x": [
+[
+"Incluye",
+"Cortador y marcador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "cortador-copo-nieve",
+"c": "navidad",
+"s": "Cortadores",
+"m": "Temporada navideña",
+"n": "Cortador copo de nieve",
+"p": "8 cm",
+"pr": 2950,
+"img": "img/cortador-copo-nieve.webp",
+"d": "Cortador de galletas con forma de copo de nieve. Se corta la galleta y queda lista para hornear y decorar. Disponible solo en temporada.",
+"x": [
+[
+"Medida",
+"8 cm"
+],
+[
+"Incluye",
+"Cortador"
+],
+[
+"Material",
+"Plástico"
+]
+],
+"u": "Galletas navideñas decoradas, galletas de mantequilla y de jengibre"
+},
+{
+"id": "premezcla-vainilla-tortuga",
+"c": "premezclas",
+"m": "La Tortuga",
+"n": "Premezcla de vainilla",
+"p": "1 kg",
+"pr": 2600,
+"img": "img/premezcla-vainilla-tortuga.webp",
+"d": "Premezcla para queque de vainilla, de la marca de la casa. Solo se le agregan huevos, agua y aceite, se bate y se hornea.",
+"x": [
+[
+"Se agrega",
+"6 huevos, 400 ml de agua y 2/3 taza de aceite"
+],
+[
+"Horneado",
+"375 °F (190 °C), 35 a 45 minutos"
+]
+],
+"u": "Queques de cumpleaños, cupcakes y bases para decorar"
+},
+{
+"id": "premezcla-chocolate-tortuga",
+"c": "premezclas",
+"m": "La Tortuga",
+"n": "Premezcla de chocolate",
+"p": "1 kg",
+"pr": 3400,
+"img": "img/premezcla-chocolate-tortuga.webp",
+"d": "Premezcla para queque de chocolate, de la marca de la casa. Solo se le agregan huevos, agua y aceite, se bate y se hornea.",
+"x": [
+[
+"Se agrega",
+"6 huevos, 400 ml de agua y 2/3 taza de aceite"
+],
+[
+"Horneado",
+"375 °F (190 °C), 35 a 45 minutos"
+]
+],
+"u": "Queques de chocolate, cupcakes y bases para decorar"
+},
+{
+"id": "premezcla-brownie-puratos",
+"c": "premezclas",
+"m": "Puratos",
+"n": "X-Press Brownie",
+"p": "1 kg",
+"pr": 4975,
+"img": "img/premezcla-brownie-puratos.webp",
+"d": "Premezcla para brownie que solo necesita agua: se bate la mezcla con una taza de agua y se hornea. Queda húmedo y con buen sabor a chocolate.",
+"x": [
+[
+"Se agrega",
+"1 taza de agua (250 g) por kilo"
+],
+[
+"Horneado",
+"150 °C, unos 30 minutos"
+]
+],
+"u": "Brownies, bases para postres y venta por porciones"
+},
+{
+"id": "premezcla-red-velvet-puratos",
+"c": "premezclas",
+"m": "Puratos",
+"n": "Premezcla Red Velvet",
+"p": "1 kg",
+"pr": 3600,
+"img": "img/premezcla-red-velvet-puratos.webp",
+"d": "Mezcla en polvo para queques tipo red velvet, con su color rojo característico. Se prepara con huevo, agua y aceite.",
+"x": [
+[
+"Se agrega",
+"Huevo, agua y aceite"
+],
+[
+"Horneado",
+"155 a 165 °C"
+]
+],
+"u": "Queques red velvet, cupcakes y capas para tortas"
+},
+{
+"id": "premezcla-tres-leches-puratos",
+"c": "premezclas",
+"m": "Puratos",
+"n": "Premezcla Tres Leches",
+"p": "1 kg",
+"pr": 3900,
+"img": "img/premezcla-tres-leches-puratos.webp",
+"d": "Premezcla para el bizcocho del tres leches: se bate con huevos y un poco de agua y da un queque esponjoso, listo para empapar.",
+"x": [
+[
+"Se agrega",
+"Huevo y un poco de agua"
+],
+[
+"Ideal para",
+"Remojar en tres leches"
+]
+],
+"u": "Tres leches, bizcochos esponjosos y postres en vaso"
+},
+{
+"id": "premezcla-zanahoria-puratos",
+"c": "premezclas",
+"m": "Puratos",
+"n": "Premezcla Queque de Zanahoria",
+"p": "1 kg",
+"pr": 6100,
+"img": "img/premezcla-zanahoria-puratos.webp",
+"d": "Premezcla para preparar queque de zanahoria. Se le agrega aceite, agua y huevos, y al final la zanahoria rallada y las nueces.",
+"x": [
+[
+"Se agrega",
+"Aceite, agua, huevo, zanahoria rallada y nueces"
+]
+],
+"u": "Queque de zanahoria, cupcakes y queques con betún de queso crema"
+},
+{
+"id": "premezcla-queque-navideno",
+"c": "navidad",
+"m": "Temporada navideña",
+"n": "Premezcla para queque navideño",
+"p": "1 kg",
+"pr": 3600,
+"img": "img/premezcla-queque-navideno.webp",
+"d": "Premezcla de la casa para el queque navideño. Se le agrega huevo, agua y aceite, se bate y se hornea. Disponible solo en temporada.",
+"x": [
+[
+"Se agrega",
+"350 g de huevo, 280 g de agua y 280 g de aceite"
+],
+[
+"Horneado",
+"150 °C, unos 40 minutos"
+]
+],
+"u": "Queque navideño para la familia, para regalar o para vender",
+"s": "Premezclas"
+},
+{
+"id": "azucar-glass-krisaby-1kg",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Azúcar glass",
+"p": "1 kg",
+"pr": 2100,
+"img": "img/azucar-glass-krisaby-1kg.webp",
+"d": "Azúcar pulverizada para repostería. Se disuelve fácil y deja betunes, glaseados y rellenos lisos, sin granitos.",
+"x": [
+[
+"Tipo",
+"Azúcar pulverizada"
+]
+],
+"u": "Betunes, glaseados, merengues y para espolvorear"
+},
+{
+"id": "azucar-glass-krisaby-2-5kg",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Azúcar glass",
+"p": "2,5 kg",
+"pr": 4600,
+"img": "img/azucar-glass-krisaby-2-5kg.webp",
+"d": "Azúcar pulverizada para repostería en presentación grande. Se disuelve fácil y deja betunes, glaseados y rellenos lisos, sin granitos.",
+"x": [
+[
+"Tipo",
+"Azúcar pulverizada"
+]
+],
+"u": "Betunes, glaseados y merengues en cantidad"
+},
+{
+"id": "fondant-krisaby",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Fondant en polvo",
+"p": "500 g",
+"pr": 3200,
+"img": "img/fondant-krisaby.webp",
+"d": "Mezcla de azúcar en polvo para hacer fondant en casa: se le agrega un poco de agua y se amasa hasta lograr una masa suave y elástica para forrar queques.",
+"x": [
+[
+"Preparación",
+"Agregar de 45 a 50 ml de agua y amasar"
+]
+],
+"u": "Forrar queques y hacer decoraciones planas"
+},
+{
+"id": "pasta-goma-krisaby",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Pasta de goma",
+"p": "500 g",
+"pr": 3200,
+"img": "img/pasta-goma-krisaby.webp",
+"d": "Mezcla en polvo para hacer pasta de goma. Se amasa con agua y queda una pasta firme que se estira muy delgada y se seca dura, ideal para flores y figuras.",
+"x": [
+[
+"Preparación",
+"Mezclar con agua y amasar"
+]
+],
+"u": "Flores, figuras y toppers"
+},
+{
+"id": "glase-real-krisaby",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Glasé real",
+"p": "500 g",
+"pr": 3200,
+"img": "img/glase-real-krisaby.webp",
+"d": "Mezcla de azúcar en polvo para preparar glasé real. Se le agrega agua hasta la consistencia deseada y se seca firme, perfecto para decorar galletas.",
+"x": [
+[
+"Preparación",
+"Agregar agua hasta la consistencia deseada"
+]
+],
+"u": "Galletas decoradas, casitas de jengibre y detalles en queques"
+},
+{
+"id": "merengue-krisaby",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Concentrado de merengue",
+"p": "100 g",
+"pr": 2200,
+"img": "img/merengue-krisaby.webp",
+"d": "Sustituto de clara de huevo en polvo para hornear y decorar. Rinde mucho: con 10 g y un poco de agua se reemplaza una clara.",
+"x": [
+[
+"Equivale",
+"10 g + 30 ml de agua = 1 clara de huevo"
+]
+],
+"u": "Merengues, suspiros, pies de limón y glasé real"
+},
+{
+"id": "isomalt-krisaby",
+"c": "fondant",
+"m": "Krisaby",
+"n": "Isomalt",
+"p": "250 g",
+"pr": 3750,
+"img": "img/isomalt-krisaby.webp",
+"d": "Sustituto de azúcar para decoración. Se derrite al fuego y al enfriarse queda duro y transparente como vidrio, para hacer piezas decorativas.",
+"x": [
+[
+"Uso",
+"Derretir a unos 180 °C y moldear"
+]
+],
+"u": "Decoraciones transparentes, gemas, velas y piezas tipo vidrio"
 }
 ];
 
